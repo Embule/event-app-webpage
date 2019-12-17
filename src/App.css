@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("tori.jpg");
+  background-size: cover;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo {
+  width: 25%;
+  margin-left: 3%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#meininki {
+  width:100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6%;
+  background-color: rgba(26, 35, 126, 0.8);
+  color: #ffffff;
+  display:grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  padding: 1%;
 }
-
-.App-link {
-  color: #61dafb;
+.text {
+  padding: 1%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qrImg {
+  min-width: 150px;
+  width:100%;
+  margin: auto;
 }

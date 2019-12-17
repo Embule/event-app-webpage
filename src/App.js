@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import meininki from './Meininki.png';
+import qr from './qr.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="logo">
+      <img src={meininki} alt="Meinkinki logo" id="meininki" />
+      </div>
+      <div className="box">
+        <div className="text">
+          <h1>Lue QR-koodi</h1>
+          <p>Skannaa Android-puhelimellasi tämän QR-koodin Expo-mobiilisovelluksella ladataksesi projektin.</p>
+          <p><b>ENEMMÄN TIETOA APPISTA??</b></p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum, quam aliquam perspiciatis aspernatur id quos sunt in assumenda. Dolorem iure possimus quidem labore magni quod nisi nesciunt ducimus maxime.</p>
+        </div>
+        <div className="image">
+          <img src={qr} alt="QR-koodi" className="qrImg" />
+        </div>
+      </div>
     </div>
   );
 }

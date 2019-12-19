@@ -2,6 +2,7 @@ body {
   background-image: url("tori.jpg");
   background-size: cover;
   height: 100%;
+  background-color: rgba(26, 35, 126);
 }
 #logo {
   width: 25%;
@@ -28,4 +29,47 @@ body {
   min-width: 150px;
   width:100%;
   margin: auto;
+}
+@media only screen and (min-width:769px) and (max-width: 1100px) {
+  body {
+    height: 100%;
+    background-image: url("tori.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(26, 35, 126);
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+  }
+  .qrImg{
+    max-width: 150px;
+  }
+  .image {
+    align-content: flex-end;
+  }
+  .text {
+    padding: 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: rgba(26, 35, 126);
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .qrImg{
+    max-width: 150px;
+    display: block;
+    float: center;
+  }
+  .box {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
